@@ -1,0 +1,425 @@
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--slat);
+  font-size: 16px;
+  background-color: var(--white);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: var(--navy-blue);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  /* margin-bottom: 0; */
+  padding: 0;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+}
+/* common */
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* #PAGE-HEADER */
+.page-header {
+  width: 100%;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  background: var(--white);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+.page-header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+.header-logo {
+  margin-right: 76px;
+  padding: 24px 0;
+}
+
+.header-logo .logo-part {
+  color: var(--navy-blue);
+}
+.header-link.current {
+  position: relative;
+}
+.header-link.current::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-color: var(--ocean);
+}
+
+.header-link {
+  font-weight: 500;
+  padding: 24px 0;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts {
+  margin-left: auto;
+}
+.contacts-link {
+  font-weight: 400;
+  color: var(--slate);
+  padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-link.current,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--ocean);
+}
+/* #endPAGE-HEADER */
+/* ------------MAIN----------------- */
+/*#section hero*/
+.section {
+  width: 100%;
+}
+.hero {
+  padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+
+  /* background-image: linear-gradient(var(--grey), var(--grey)),
+    url(/images/people-office.png); */
+  max-width: 1440px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: var(--white);
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-btn {
+  display: block;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
+  height: 56px;
+  background-color: var(--iris);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--ocean);
+}
+
+/* #endsection hero */
+
+/* section advantages */
+.advantages {
+  padding: 120px 0;
+}
+.advantages-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--cloud);
+  margin-bottom: 8px;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--navy-blue);
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.text {
+  font-weight: 400;
+}
+.advantages .text {
+  text-align: left;
+}
+.advantages-list {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  /* justify-content: center; */
+}
+.advantages-item {
+  width: calc((100% - 72px) / 4);
+}
+/* section team */
+.team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.team-title {
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  background-color: var(--white);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team-item:first-child {
+  width: calc((100% - 72px) / 4);
+}
+.card-team-text {
+  padding: 32px 0;
+}
+.card-team-text .subtitle {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.card-team-text .text {
+  margin-bottom: 8px;
+}
+.card-team-icons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.card-team-icons-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--iris);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-icons {
+  fill: var(--cloud);
+}
+.card-team-icons-link:hover,
+.card-team-icons-link:focus {
+  background-color: var(--ocean);
+}
+
+.team-title,
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  color: var(--navy-blue);
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+.team-item .subtitle,
+.team-item .text {
+  text-align: center;
+}
+/* #endsection team  */
+/* #portfolio section */
+.portfolio {
+  padding: 120px 0;
+}
+.portfolio-title {
+  margin-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: var(--white);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item img {
+  width: 100%;
+}
+.portfolio-item-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.overlay-text {
+  background-color: var(--iris);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+  padding: 40px 32px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item-overlay:hover .overlay-text {
+  transform: translateY(0);
+}
+.card-portfolio-text {
+  padding: 32px 16px;
+  text-align: left;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.card-portfolio-text .text {
+  text-align: left;
+}
+
+/* #endportfolio section */
+/* FOOTER */
+.page-footer {
+  padding: 100px 0;
+  background-color: var(--navy-blue);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-logo .logo-part {
+  color: #f4f4fd;
+}
+.footer-logo {
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.footer-text {
+  color: #f4f4fd;
+  width: 264px;
+}
+.footer-content {
+  margin-right: 120px;
+}
+.footer-social-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+.footer-icons {
+  gap: 16px;
+}
+.footer-icons .card-team-icons-link:hover,
+.footer-icons .card-team-icons-link:focus {
+  background-color: var(--green);
+}
