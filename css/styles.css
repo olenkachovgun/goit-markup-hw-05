@@ -604,7 +604,9 @@ img {
 .modal-form-input:focus + .modal-icon {
   fill: var(--iris);
 }
-
+.comment-container {
+  margin-bottom: 16px;
+}
 .modal-textarea {
   padding: 8px 16px;
   height: 120px;
@@ -661,6 +663,7 @@ img {
   border-color: transparent;
   background-color: var(--ocean);
   border: none;
+  fill: var(--cloud);
 }
 .submit-btn {
   cursor: pointer;
