@@ -563,7 +563,7 @@ img {
 }
 
 .form-wrraper-cont {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .modal-form-label {
@@ -610,6 +610,10 @@ img {
   height: 120px;
   resize: none;
   color: var(--navy-blue);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 .modal-textarea::placeholder {
   font-weight: 400;
